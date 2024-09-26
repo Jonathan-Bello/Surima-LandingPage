@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        title: '"Hendry", serif',
+        title: '"hendryregular", serif',
         sans: '"Montserrat", sans-serif',
       },
     },
