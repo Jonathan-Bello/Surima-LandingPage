@@ -1,0 +1,87 @@
+---
+
+---
+
+<div
+  class="w-full h-full max-h-[100vh] min-h-0 min-w-0 overflow-hidden
+mb-24 bg-[#B66339] rounded-3xl px-4 md:px-16 py-16"
+>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h3>Rising demand for sustainability hospitality and real estate</h3>
+        <p>
+          Change in consumer preferences and positioning towards environmentally
+          friendly properties is set to boost tourism in the region, enhancing
+          the appeal of Real Estate assets. Ongoing trend towards merging luxury
+          with sustainability in unique developments like Surima that focus on
+          culminating local heritage through immersive experiences provides
+          upside momentum.
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <h3>
+          Resilience of Mexican tourism sector and strategic investment
+          destination
+        </h3>
+        <p>
+          The Mexican Caribbean is already one of the most visited vacation
+          hotspots in Latin America, with over 30 million tourists per year as
+          of 2023. With the implementation of infrastructure programs and the
+          anticipated increase in arrivals from international tourists, there's
+          a growing need for cultural engagement and sustainable hospitality.
+        </p>
+      </div>
+      <div class="swiper-slide">
+        <h3>Transformative government-sponsored infrastructure program</h3>
+        <p>
+          Three significant infrastructure projects—Tulum International Airport,
+          Mayan Train, and Jaguar National Park—are expected to increase the
+          annual tourist influx in the Riviera Maya by 10.9 million. These
+          projects will not only enhance accessibility but also open new
+          opportunities for tourism and development in the region.
+        </p>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<style>
+  h3 {
+    @apply text-white text-center font-title text-3xl lg:text-4xl mb-6;
+  }
+  p {
+    @apply text-white text-center font-sans text-lg;
+  }
+
+  .swiper-wrapper {
+    margin-bottom: 4rem;
+  }
+</style>
+
+<script>
+  import Swiper from "swiper/bundle";
+
+  // import styles bundle
+  import "swiper/css/bundle";
+
+  document.addEventListener("DOMContentLoaded", (ev) => {
+    // import Swiper bundle with all modules installed
+
+    new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 8,
+      pagination: {
+        enabled: true,
+        clickable: true,
+        type: "bullets",
+        el: ".swiper-pagination",
+        bulletClass:
+          "inline-block w-10 lg:w-16 h-2 lg:h-3 mx-2 rounded-full bg-white bg-opacity-50",
+        bulletActiveClass: "!bg-opacity-100",
+        clickableClass: "bg-opacity-100",
+      },
+    });
+  });
+</script>
