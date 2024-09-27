@@ -1,0 +1,137 @@
+---
+import { getImage } from "astro:assets";
+import imgSustainability from "@/assets/img/sustentability.webp";
+import imgConnection from "@/assets/img/connection.webp";
+import imgWellbeing from "@/assets/img/wellbeing.webp";
+
+const bgSustainability = await getImage({
+  src: imgSustainability,
+  format: "webp",
+});
+
+const bgConnection = await getImage({
+  src: imgConnection,
+  format: "webp",
+});
+
+const bgWellbeing = await getImage({
+  src: imgWellbeing,
+  format: "webp",
+});
+---
+
+<section
+  class="container mb-24 lg:mb-32 flex flex-col items-center px-4 lg:px-0"
+>
+  <h2 class="text-[#616F5D] font-title text-3xl lg:text-5xl text-center mb-8">
+    Investment opportunity
+  </h2>
+
+  <div
+    class="border rounded-xl border-[#CFCFCF] md:px-32 py-8 md:py-16 overflow-visible"
+  >
+    <p
+      class="text-[#5B5b5b] text-center font-sans font-normal text-xl lg:text-3xl mb-4"
+    >
+      20 multifamily land plots for residential and commercial use
+    </p>
+
+    <div
+      class="w-full bg-slate-900 gap-y-[1px] grid grid-rows-10 grid-flow-col mb-12"
+    >
+      <div class="cell">
+        <span> Macro-Plot #1 </span>
+        <span> 11,507 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #2 </span>
+        <span> 6,516 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #3 </span>
+        <span> 18,931 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #4 </span>
+        <span> 18,902 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #5 </span>
+        <span> 16,499 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #6 </span>
+        <span> 16,508 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #7 </span>
+        <span> 4,810 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #8 </span>
+        <span> 4,815 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #9 </span>
+        <span> 4,717 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #10 </span>
+        <span> 4,789 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #11 </span>
+        <span> 17,419 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #12 </span>
+        <span> 11,070 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #13 </span>
+        <span> 11,094 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #14 </span>
+        <span> 5,070 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #15 </span>
+        <span> 7,479 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #16 </span>
+        <span> 7,476 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot #17 </span>
+        <span> 7,476 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot A </span>
+        <span> 8,984 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot B </span>
+        <span> 8,496 M2 </span>
+      </div>
+      <div class="cell">
+        <span> Macro-Plot C </span>
+        <span> 9,867 M2 </span>
+      </div>
+    </div>
+
+    <p
+      class="text-[#5B5b5b] text-center font-sans font-normal text-lg lg:text-xl mb-4"
+    >
+      Reserve your lot with a $5,000 USD deposit <br /> Enjoy interest-free financing
+      for up to 48 months
+    </p>
+  </div>
+</section>
+
+<style>
+  .cell {
+    @apply text-sm md:text-base flex items-center justify-around px-2 md:px-6 py-2 lg:py-6 gap-2 flex-1 bg-white;
+  }
+</style>

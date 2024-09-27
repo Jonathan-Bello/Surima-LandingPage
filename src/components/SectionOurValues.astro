@@ -1,0 +1,78 @@
+---
+import { getImage } from "astro:assets";
+import imgSustainability from "@/assets/img/sustentability.webp";
+import imgConnection from "@/assets/img/connection.webp";
+import imgWellbeing from "@/assets/img/wellbeing.webp";
+
+const bgSustainability = await getImage({
+  src: imgSustainability,
+  format: "webp",
+});
+
+const bgConnection = await getImage({
+  src: imgConnection,
+  format: "webp",
+});
+
+const bgWellbeing = await getImage({
+  src: imgWellbeing,
+  format: "webp",
+});
+---
+
+<section
+  class="container mb-24 lg:mb-32 flex flex-col items-center px-4 lg:px-0"
+>
+  <h2 class="text-[#616F5D] font-title text-3xl lg:text-5xl text-center mb-8">
+    Our Values
+  </h2>
+  <div class="w-full grid grid-cols-1 gap-6 md:grid-cols-3">
+    <article
+      style={`background-image: url(${bgSustainability.src});`}
+      class="w-full h-80 rounded-xl overflow-hidden"
+    >
+      <div
+        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #152624 100%);"
+        class="w-full h-full relative"
+      >
+        <h3
+          class="text-white font-sans font-semibold text-xl lg:text-2xl absolute left-6 bottom-6"
+        >
+          Sustainability
+        </h3>
+      </div>
+    </article>
+
+    <article
+      style={`background-image: url(${bgWellbeing.src});`}
+      class="w-full h-80 rounded-xl overflow-hidden"
+    >
+      <div
+        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #152624 100%);"
+        class="w-full h-full relative"
+      >
+        <h3
+          class="text-white font-sans font-semibold text-xl lg:text-2xl absolute left-6 bottom-6"
+        >
+          Wellbeing
+        </h3>
+      </div>
+    </article>
+
+    <article
+      style={`background-image: url(${bgConnection.src});`}
+      class="w-full h-80 rounded-xl overflow-hidden"
+    >
+      <div
+        style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #152624 100%);"
+        class="w-full h-full relative"
+      >
+        <h3
+          class="text-white font-sans font-semibold text-xl lg:text-2xl absolute left-6 bottom-6"
+        >
+          Sustainability
+        </h3>
+      </div>
+    </article>
+  </div>
+</section>

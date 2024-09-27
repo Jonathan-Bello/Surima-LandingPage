@@ -1,0 +1,85 @@
+---
+import { getImage, Image } from "astro:assets";
+
+import imgBgBanner from "@/assets/img/bgTownSurima.webp";
+
+const optimizedBackground = await getImage({
+  src: imgBgBanner,
+  format: "webp",
+});
+---
+
+<section
+  class="w-full"
+  style={`background-image: url(${optimizedBackground.src});`}
+>
+  <div
+    style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #152624 100%);"
+    class="w-full h-full py-16 lg:py-32 flex flex-col items-center justify-center gap-6"
+  >
+    <div class="container px-4 lg:px-0">
+      <h2 class="text-3xl lg:text-4xl text-white text-center mb-12">
+        Tulum is the town that hosts Surima
+      </h2>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <p
+          class="text-center flex flex-col justify-center text-white w-full h-full border border-white rounded-2xl px-8 py-16"
+        >
+          <span>
+            Tulum is a destination that attracts over <b
+              >6.5 million people every year</b
+            > who seek to reconnect with their more authentic selves and rejuvenate
+            their well-being.
+          </span>
+        </p>
+        <p
+          class="text-center flex flex-col justify-center text-white w-full h-full border border-white rounded-2xl px-8 py-16"
+        >
+          <span>
+            <b>Mexico: the #1 tourist destination</b> due to its diverse natural
+            beauty and magic.
+          </span>
+        </p>
+        <p
+          class="text-center flex flex-col justify-center text-white w-full h-full border border-white rounded-2xl px-8 py-16"
+        >
+          <span>
+            <b>87% of tourists visiting</b> Tulum are foreigners who seek unique
+            experiences and contribute significantly to the local economy through
+            <b>substantial economic spillover.</b>
+          </span>
+        </p>
+        <p
+          class="text-center flex flex-col justify-center text-white w-full h-full border border-white rounded-2xl px-8 py-16"
+        >
+          <span>
+            The enchantment of Tulum beckons tourists to indulge their senses,
+            yet there is a scarcity of vacation rental spaces (-10% on Airbnb)
+            available to satisfy their desires.
+          </span>
+        </p>
+        <p
+          class="text-center flex flex-col justify-center text-white w-full h-full border border-white rounded-2xl px-8 py-16"
+        >
+          <span>
+            People go to Tulum to forge a connection with the natural world and
+            contribute to its well-being, resulting in an annual investment of
+            <b>over $7.1 billion.</b>
+          </span>
+        </p>
+        <p
+          class="text-center flex flex-col justify-center text-white w-full h-full border border-white rounded-2xl px-8 py-16"
+        >
+          <span>
+            With <b>Tulum</b> boasting an impressive <b>82% occupancy rate</b>,
+            Surima aims to seize the real estate opportunity while prioritizing
+            sustainability and authenticity.
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style></style>

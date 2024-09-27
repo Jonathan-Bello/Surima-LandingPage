@@ -1,10 +1,37 @@
 ---
+import SectionOurValues from "@/components/SectionOurValues.astro";
 import BannerMain from "../components/BannerMain.astro";
 import Layout from "../layouts/Layout.astro";
+import SectionInvest from "@/components/SectionInvest.astro";
+import SectionHost from "@/components/SectionHost.astro";
 ---
 
 <Layout title="Surima">
   <BannerMain />
+
+  <section
+    class="container mt-24 mb-32 flex flex-col items-center px-4 lg:px-0"
+  >
+    <div>
+      <h2
+        class="text-[#B79064] font-title text-5xl lg:text-7xl text-center mb-8"
+      >
+        About Surima
+      </h2>
+      <p
+        class="font-sans text-lg text-center max-w-xl md:lg-max-2xl lg:max-w-4xl"
+      >
+        Surima is a 22-hectare (55-acre) master-planned community in the heart
+        of Tulum's jungle that seeks to promote sustainability and nature
+        through 20 land parcels for wellness, residential, hotel, and retail
+        use.
+      </p>
+    </div>
+  </section>
+
+  <SectionOurValues />
+  <SectionInvest />
+  <SectionHost />
 </Layout>
 
 <style></style>
