@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import imgCyclone from "@/assets/img/cyclone.webp";
+---
+
+<section
+  class="container px-4 lg:px-0 mb-20 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 lg:gap-20"
+>
+  <di class="[&>p]:text-lg lg:[&>p]:text-xl [&>p]:font-sans">
+    <h2 class="text-[#B79064] font-title text-5xl mb-8">Our Experience</h2>
+    <p class="mb-8">
+      We are 100% committed to conserving our environment and applying the
+      latest clean energy and wastewater technologies in all of our projects.
+    </p>
+    <p>
+      Our mission is to provide our clients, their families, friends, and guests
+      with a new type of experience, allowing them to cherish special moments by
+      connecting with nature and themselves.
+    </p>
+  </di>
+
+  <Image
+    src={imgCyclone}
+    alt="imagen de un cyclone de agua creado por una moto acuática"
+  />
+</section>
+
+<style></style>
